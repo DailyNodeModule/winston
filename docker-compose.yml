@@ -1,0 +1,20 @@
+version: '2'
+services:
+  emitter:
+    build:
+      context: ./services/emitter
+      dockerfile: ../../Dockerfile
+    environment:
+    - MONGO_URL=mongodb://mongo:27017
+    links:
+    - mongo
+  viewer:
+    build:
+      context: ./services/viewer
+      dockerfile: ../../Dockerfile
+    environment:
+    - MONGO_URL=mongodb://mongo:27017
+    links:
+    - mongo
+  mongo:
+    image: mongo

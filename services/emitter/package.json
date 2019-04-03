@@ -1,0 +1,20 @@
+{
+  "name": "@dailynodemodule/winston-emitter",
+  "version": "1.0.0",
+  "description": "A sample project for winston",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dailynodemodule/winston"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Zachary Boyd <zachary@dailynodemodule.com>",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "mongodb": "^3.2.2",
+    "winston": "^3.2.1",
+    "winston-mongodb": "^5.0.0"
+  }
+}
